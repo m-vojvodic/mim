@@ -1,0 +1,192 @@
+/*
+    Message in a Melody
+    (c) Marko Vojvodic 2015
+*/
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../lato/Lato-Light.ttf");
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #f1c40f;
+}
+
+.navbar-text {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.text-wrapper {
+    margin: 0;
+    height: 400px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: table;
+}
+
+.text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.video-wrapper {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 400px;
+
+}
+
+.content-wrapper {
+    height: auto;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#video {
+    height: auto;
+}
+
+#goal {
+    background-color: #f1c40f;
+}
+
+#info {
+    background-color: #ecf0f1;
+}
+
+#sponsorship {
+    background-color: #f1c40f;
+}
+
+#contact {
+    background-color: #ecf0f1;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#affiliates {
+    background-color: #f1c40f;
+    height: auto;
+}
+
+#social-media {
+    background-color: #f1c40f;
+    height: auto;
+}
+
+#handle-wrapper {
+    justify-content: space-around;
+}
+
+.officer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+#officer-info {
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.prof-pic {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.handle {
+    position: relative;
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #f1c40f;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* so responsive */
+
+@media (max-width: 999px) {
+    #officer-wrapper {
+        flex-direction: column;
+    }
+    
+    .officer {
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #finance {
+        margin-top: 0px;
+    }
+    
+    #sponsor {
+        margin-bottom: 0px;
+    }
+    
+    #social-media {
+        height: auto;
+    }
+}
