@@ -34,17 +34,21 @@ body{
 
 .text-wrapper {
     margin: 0;
-    height: 400px;
+    min-height: 400px;
     max-width: 1000px;
     margin: auto;
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     display: table;
 }
 
 .text {
     display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.section-title {
+    display: table-row;
     text-align: center;
     vertical-align: middle;
 }
@@ -69,8 +73,7 @@ body{
     left: 0px;
     right: 0px;
     width: 100%;
-    height: 400px;
-
+    min-height: 400px;
 }
 
 .content-wrapper {
@@ -84,8 +87,19 @@ body{
     justify-content: space-between;
 }
 
+.poem {
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+}
+
 #video {
     height: auto;
+    min-height: 0;
+}
+
+#message {
+    background-color: #f1c40f;
 }
 
 #goal {
@@ -93,6 +107,30 @@ body{
 }
 
 #info {
+    background-color: #ecf0f1;
+}
+
+#about-us {
+    background-color: #f1c40f;
+}
+
+#history {
+    background-color: #ecf0f1;
+}
+
+#current-year {
+    background-color: #f1c40f;
+}
+
+#mission {
+    background-color: #ecf0f1;
+}
+
+#funds {
+    background-color: #f1c40f;
+}
+
+#poem {
     background-color: #ecf0f1;
 }
 
@@ -107,14 +145,20 @@ body{
     padding-bottom: 50px;
 }
 
+#team {
+    min-height: 40px;
+    text-align: center;
+    padding-top: 0;
+}
+
 #affiliates {
     background-color: #f1c40f;
-    height: auto;
+    min-height: 100px;
 }
 
 #social-media {
     background-color: #f1c40f;
-    height: auto;
+    min-height: 100px;
 }
 
 #handle-wrapper {
