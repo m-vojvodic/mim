@@ -3,14 +3,36 @@
     (c) Marko Vojvodic 2015
 */
 
+/* main page */
+
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-Light';
     src: url("../lato/Lato-Light.ttf");
 }
 
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url("../lato/Lato-Bold.ttf");
+}
+
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato-Light', sans-serif;
+    font-size: 20px;
     margin: 0;
+}
+
+b {
+    font-family: 'Lato-Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #d35400;
 }
 
 .navbar {
@@ -38,19 +60,18 @@ body{
     max-width: 1000px;
     margin: auto;
     padding: 20px;
-    display: table;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .text {
-    display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
 
 .section-title {
-    display: table-row;
     text-align: center;
-    vertical-align: middle;
 }
 
 .video-wrapper {
@@ -96,10 +117,6 @@ body{
 #video {
     height: auto;
     min-height: 0;
-}
-
-#message {
-    background-color: #f1c40f;
 }
 
 #goal {
@@ -232,5 +249,37 @@ body{
     
     #social-media {
         height: auto;
+    }
+}
+
+/* splash page */
+
+#message {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+}
+
+#message-content {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    max-width: 1000px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 525px) {
+    body {
+        font-size: 16px; 
+    }
+    #message-content {
+        font-size: 20px;
     }
 }
