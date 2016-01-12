@@ -1,0 +1,42 @@
+/*
+    orange: #fa8800
+    yellow: #fecc35
+    pink:   #ff3991
+    gray:   #343434
+*/
+
+@font-face {
+    font-family: 'Bariol-Regular';
+    src: url("../fonts/Bariol_Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Bariol-Regular-Italic';
+    font-style: italic;
+    src: url("../fonts/Bariol_Regular_Italic.otf") format("opentype");
+}
+
+.highlight {
+    font-family: 'Bariol-Regular-Italic';
+    background-color: #343434;
+    color: white;
+    padding: 2px 4px;
+}
+
+.gradient {
+    background-image: linear-gradient( to bottom right, #fa8800, #fecc35, #ff3991 );
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* TODO temporary */
+    text-align: center;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
