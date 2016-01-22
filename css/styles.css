@@ -17,11 +17,12 @@
 }
 
 .regular {
-    font-family: 'Bariol-Regular';
+    font-family: 'Bariol-Regular', Helvetica, Arial, sans-serif;
 }
 
 .italic {
-    font-family: 'Bariol-Regular-Italic';
+    font-family: 'Bariol-Regular-Italic', Helvetica, Arial, sans-serif;
+    font-style: italic;
 }
 
 .highlight {
